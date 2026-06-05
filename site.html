@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALWT Designs // Premium Brand & Digital Systems</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #030303;
+            color: #fafafa;
+            overflow-x: hidden;
+        }
+        .font-heading {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Grid Background overlay */
+        .bg-matrix {
+            background-size: 50px 50px;
+            background-image: linear-gradient(to right, rgba(39, 39, 42, 0.25) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(39, 39, 42, 0.25) 1px, transparent 1px);
+        }
+        /* Neon Glow Utility */
+        .neon-glow-green {
+            box-shadow: 0 0 30px rgba(173, 250, 29, 0.15);
+        }
+        .neon-text-glow {
+            text-shadow: 0 0 15px rgba(173, 250, 29, 0.5);
+        }
+        /* Infinite Marquee Animation */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 25s linear infinite;
+        }
+        /* Custom Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-matrix antialiased">
+
+    <!-- FIXED TOP HEADER -->
+    <nav class="w-full fixed top-0 z-50 backdrop-blur-xl border-b border-zinc-900 bg-black/60 px-6 md:px-12 py-4 flex justify-between items-center">
+        <!-- THE LOGO (Pure Scalable Vector Geometry) -->
+        <a href="#" class="flex items-center gap-3 group">
+            <div class="w-11 h-11 relative flex items-center justify-center transition-transform duration-500 group-hover:rotate-6">
+                <!-- SVG Vector Core Asset -->
+                <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-[0_0_8px_rgba(173,250,29,0.3)]">
+                    <rect x="10" y="10" width="80" height="80" rx="18" fill="#09090b" stroke="#27272a" stroke-width="2"/>
+                    <path d="M35 70L50 30L65 70" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 70H38M62 70H75" stroke="#adfa1d" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M43 52H57" stroke="#adfa1d" stroke-width="4" stroke-linecap="round"/>
+                    <circle cx="50" cy="18" r="3" fill="#adfa1d" class="animate-ping"/>
+                </svg>
+            </div>
+            <div class="flex flex-col">
+                <span class="font-heading font-bold text-xl tracking-tight text-white leading-none">ALWT <span class="text-[#adfa1d]">DESIGNS</span></span>
+                <span class="text-[9px] text-zinc-500 tracking-widest uppercase font-mono mt-1">Creative Hub // v2.6</span>
+            </div>
+        </a>
+
+        <!-- Menu Links -->
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+            <a href="#portfolio" class="hover:text-[#adfa1d] transition-colors">Selected Work</a>
+            <a href="#services" class="hover:text-[#adfa1d] transition-colors">Capabilities</a>
+            <a href="#about" class="hover:text-[#adfa1d] transition-colors">The Manifesto</a>
+            <a href="#pricing" class="hover:text-[#adfa1d] transition-colors">Retainers</a>
+            <a href="mailto:admin@alwtdesigns.xyz" class="bg-[#adfa1d] text-black px-5 py-2.5 rounded-xl font-bold font-heading hover:bg-white hover:scale-105 transition-all neon-glow-green">Let's Build</a>
+        </div>
+    </nav>
+
+    <!-- HERO DEPLOYMENT HERO -->
+    <section class="min-h-screen flex flex-col justify-center items-center px-6 pt-32 text-center relative overflow-hidden">
+        <!-- Radial Lighting Flares -->
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#adfa1d]/5 rounded-full blur-[140px] pointer-events-none"></div>
+        
+        <div class="inline-flex items-center gap-2 bg-zinc-900/80 border border-zinc-800 px-4 py-1.5 rounded-full text-xs font-mono text-zinc-300 mb-8">
+            <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#adfa1d] opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-[#adfa1d]"></span>
+            </span>
+            STUDIO METRICS: 24+ SHIPPED IN 12 MONTHS
+        </div>
+
+        <h1 class="font-heading text-5xl md:text-8xl font-black tracking-tighter max-w-5xl leading-[0.9] mb-8">
+            WE DESIGN DIGITAL PRODUCTS THAT <span class="text-[#adfa1d] neon-text-glow">COMMAND ATTENTION.</span>
+        </h1>
+
+        <p class="text-zinc-400 max-w-2xl text-base md:text-xl mb-12 font-normal leading-relaxed">
+            ALWT Designs constructs high-impact brand strategies, premium corporate identity, and interactive web ecosystems for companies refusing to stay invisible.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 z-10">
+            <a href="#portfolio" class="px-8 py-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white font-semibold rounded-xl text-md transition-all">Explore Case Studies</a>
+            <a href="mailto:admin@alwtdesigns.xyz" class="px-8 py-4 bg-[#adfa1d] text-black font-bold font-heading rounded-xl text-md hover:bg-white transition-all">Initiate Project</a>
+        </div>
+    </section>
+
+    <!-- ROLLING LIVE TICKER BRANDS (Shows credibility history) -->
+    <div class="w-full bg-zinc-950 border-y border-zinc-900 py-6 overflow-hidden flex whitespace-nowrap relative">
+        <div class="flex items-center gap-16 animate-marquee uppercase font-heading font-bold text-xs tracking-widest text-zinc-600">
+            <span>AJM ESTATES // BRAND SYSTEM DEPLOYED</span> <span class="text-[#adfa1d] font-mono">●</span>
+            <span>VELOCE MEDIA // WEB INTERACTION LIVE</span> <span class="text-[#adfa1d] font-mono">●</span>
+            <span>NEXUS VENTURES // ECOSYSTEM REBRAND</span> <span class="text-[#adfa1d] font-mono">●</span>
+            <span>KINETIC ENERGY // PACKAGING CONCEPT</span> <span class="text-[#adfa1d] font-mono">●</span>
+            <span>AJM ESTATES // BRAND SYSTEM DEPLOYED</span> <span class="text-[#adfa1d] font-mono">●</span>
+            <span>VELOCE MEDIA // WEB INTERACTION LIVE</span> <span class="text-[#adfa1d] font-mono">●</span>
+            <span>NEXUS VENTURES // ECOSYSTEM REBRAND</span> <span class="text-[#adfa1d] font-mono">●</span>
+            <span>KINETIC ENERGY // PACKAGING CONCEPT</span> <span class="text-[#adfa1d] font-mono">●</span>
+        </div>
+    </div>
+
+    <!-- MAIN LIVE PORTFOLIO -->
+    <section id="portfolio" class="py-32 px-6 md:px-12 max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-20 gap-6">
+            <div>
+                <p class="text-[#adfa1d] text-xs font-mono uppercase tracking-widest mb-3">// ARCHIVE OF EXCELLENCE</p>
+                <h2 class="font-heading text-4xl md:text-6xl font-bold tracking-tight">PROVEN CAPABILITIES</h2>
+            </div>
+            <p class="text-zinc-400 max-w-md text-sm md:text-base">
+                Real data. Real production files. These projects went live over the last calendar year, helping clients capture market visibility.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Project Grid Row 1 -->
+            <div class="group bg-zinc-950 border border-zinc-900 rounded-3xl p-6 transition-all duration-300 hover:border-zinc-700">
+                <div class="h-80 md:h-96 bg-zinc-900/40 rounded-2xl mb-6 border border-zinc-800/60 flex flex-col items-center justify-center relative overflow-hidden p-8">
+                    <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-[#adfa1d] text-xs font-mono px-3 py-1 rounded-md border border-zinc-800">IDENTITY COMPLETED // 2026</div>
+                    <!-- Mock Logo Design Showcase Box -->
+                    <div class="text-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="text-4xl font-heading font-black tracking-tighter text-white mb-2">AJM ESTATES</div>
+                        <div class="w-16 h-1 bg-[#adfa1d] mx-auto rounded"></div>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold font-heading text-white mb-2">AJMEstates</h3>
+                <p class="text-zinc-400 text-sm mb-4">Complete structural rebranding including modern vector mark geometry, print asset styling, and spatial architectural layout directions.</p>
+                <div class="flex gap-2">
+                    <span class="text-xs font-mono bg-zinc-900 text-zinc-400 px-3 py-1 rounded-md border border-zinc-800">Brand Guidelines</span>
+                    <span class="text-xs font-mono bg-zinc-900 text-zinc-400 px-3 py-1 rounded-md border border-zinc-800">Asset Pack</span>
+                </div>
+            </div>
+
+            <!-- Project Grid Row 2 -->
+            <div class="group bg-zinc-950 border border-zinc-900 rounded-3xl p-6 transition-all duration-300 hover:border-zinc-700">
+                <div class="h-80 md:h-96 bg-zinc-900/40 rounded-2xl mb-6 border border-zinc-800/60 flex flex-col items-center justify-center relative overflow-hidden p-8">
+                    <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-[#adfa1d] text-xs font-mono px-3 py-1 rounded-md border border-zinc-800">INTERFACE DEPLOYED // 2025</div>
+                    <div class="text-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="text-4xl font-heading font-black tracking-tighter text-zinc-600 mb-2">VELOCE<span class="text-[#adfa1d]">//</span></div>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-bold font-heading text-white mb-2">Veloce Media Group</h3>
+                <p class="text-zinc-400 text-sm mb-4">High-performance digital ecosystem built on modern frameworks. Zero latency, bespoke imagery styling, and aggressive layout grids built for high conversion.</p>
+                <div class="flex gap-2">
+                    <span class="text-xs font-mono bg-zinc-900 text-zinc-400 px-3 py-1 rounded-md border border-zinc-800">UI/UX Layout</span>
+                    <span class="text-xs font-mono bg-zinc-900 text-zinc-400 px-3 py-1 rounded-md border border-zinc-800">Frontend Dev</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE CAPABILITIES / CAPABILITIES -->
+    <section id="services" class="py-24 bg-zinc-950/60 border-y border-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 md:px-12">
+            <p class="text-[#adfa1d] text-xs font-mono uppercase tracking-widest text-center mb-3">// WORK METHODS</p>
+            <h2 class="font-heading text-3xl md:text-5xl font-bold text-center mb-16">WHAT WE COOK</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Cap 1 -->
+                <div class="border border-zinc-900 bg-black p-8 rounded-2xl hover:border-zinc-800 transition-colors">
+                    <div class="w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center text-[#adfa1d] font-heading font-bold mb-6">01</div>
+                    <h3 class="text-xl font-bold font-heading mb-3">Identity Architectures</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Logos, typography, brand rule sheets, and physical assets that communicate trust while sustaining a disruptive visual tone.</p>
+                </div>
+                <!-- Cap 2 -->
+                <div class="border border-zinc-900 bg-black p-8 rounded-2xl hover:border-zinc-800 transition-colors">
+                    <div class="w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center text-[#adfa1d] font-heading font-bold mb-6">02</div>
+                    <h3 class="text-xl font-bold font-heading mb-3">Web Engineering</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Bespoke design interfaces converted to optimized semantic layouts. High page speed parameters and robust security baselines.</p>
+                </div>
+                <!-- Cap 3 -->
+                <div class="border border-zinc-900 bg-black p-8 rounded-2xl hover:border-zinc-800 transition-colors">
+                    <div class="w-12 h-12 bg-zinc-900 rounded-xl flex items-center justify-center text-[#adfa1d] font-heading font-bold mb-6">03</div>
+                    <h3 class="text-xl font-bold font-heading mb-3">Media Retainers</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">Continuous delivery of social marketing visual assets, conversion layouts, pitch updates, and design consultancy on demand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RETROSPECTIVE MANIFESTO SECTIONS (The Founder Details) -->
+    <section id="about" class="py-32 px-6 max-w-5xl mx-auto relative">
+        <div class="absolute top-1/2 left-0 w-64 h-64 bg-emerald-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="text-center">
+            <div class="w-20 h-20 bg-zinc-900 border border-zinc-800 rounded-2xl flex items-center justify-center mx-auto mb-8">
+                <!-- Inner Decorative Brand Stamp -->
+                <span class="text-white font-heading font-bold text-3xl">L</span>
+            </div>
+            <span class="text-[#adfa1d] text-xs font-mono uppercase tracking-widest block mb-4">// DESIGN LEAD</span>
+            <h2 class="font-heading text-4xl md:text-6xl font-black tracking-tight text-white mb-8">LOUIE WARNER</h2>
+            <p class="text-zinc-400 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto font-light">
+                "ALWT Designs handles design with execution strategy. Over the last year, we've broken businesses out of corporate boxes by injecting youth culture, precision geometry, and dark-interface styling into brands ready for global conversion."
+            </p>
+            <div class="mt-12 inline-flex items-center gap-6 text-zinc-500 text-xs font-mono tracking-widest border border-zinc-900 bg-zinc-950/50 px-6 py-3 rounded-xl">
+                <span>FOUNDER & HEAD OF BRAND SYSTEMS</span>
+                <span class="text-zinc-800">|</span>
+                <span>GLOBAL OPERATIONS DEPLOYED IN UK</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSPARENT AGENCY RETAINER PRICING -->
+    <section id="pricing" class="py-24 bg-zinc-950/40 border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-[#adfa1d] text-xs font-mono uppercase tracking-widest block mb-2">// COMMITTED ENGAGEMENTS</span>
+                <h2 class="font-heading text-3xl md:text-5xl font-bold">TRANSPARENT SYSTEM SCALE</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Retainer Plan 1 -->
+                <div class="border border-zinc-900 bg-black/80 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold font-heading mb-2">Bespoke Brand Build</h3>
+                        <p class="text-zinc-500 text-xs mb-6">Ideal for launch initiatives and complete corporate transformations.</p>
+                        <div class="font-heading text-4xl font-bold text-white mb-6">Fixed Rate</div>
+                        <ul class="text-zinc-400 text-sm space-y-3 mb-8 border-t border-zinc-900 pt-6">
+                            <li class="flex items-center gap-2">✓ Comprehensive Visual Auditing</li>
+                            <li class="flex items-center gap-2">✓ Primary vector systems (.SVG, .PNG, .AI)</li>
+                            <li class="flex items-center gap-2">✓ Interactive Interface Guideline Deck</li>
+                            <li class="flex items-center gap-2">✓ Delivery timeframe: 14-21 Business Days</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:admin@alwtdesigns.xyz" class="w-full text-center py-3 bg-zinc-900 hover:bg-zinc-800 text-white font-medium rounded-xl text-sm transition-colors border border-zinc-800">Book Briefing Session</a>
+                </div>
+
+                <!-- Retainer Plan 2 -->
+                <div class="border border-[#adfa1d] bg-black/80 p-8 rounded-2xl relative flex flex-col justify-between neon-glow-green">
+                    <div class="absolute -top-3 right-4 bg-[#adfa1d] text-black font-mono font-bold text-[10px] px-3 py-0.5 rounded-full uppercase tracking-wider">High Demand</div>
+                    <div>
+                        <h3 class="text-xl font-bold font-heading mb-2">Studio Retainer Subscription</h3>
+                        <p class="text-zinc-500 text-xs mb-6">Dedicated product line assets on constant monthly call rotation.</p>
+                        <div class="font-heading text-4xl font-bold text-white mb-6">Monthly Cap</div>
+                        <ul class="text-zinc-400 text-sm space-y-3 mb-8 border-t border-zinc-900 pt-6">
+                            <li class="flex items-center gap-2 text-white">✓ Infinite asset engineering drops</li>
+                            <li class="flex items-center gap-2">✓ Instant asynchronous Slack channel link</li>
+                            <li class="flex items-center gap-2">✓ Continuous structural code updates</li>
+                            <li class="flex items-center gap-2">✓ Fixed 48-hour turn times</li>
+                        </ul>
+                    </div>
+                    <a href="mailto:admin@alwtdesigns.xyz" class="w-full text-center py-3 bg-[#adfa1d] text-black font-bold font-heading rounded-xl text-sm hover:bg-white transition-colors">Acquire Studio Slot</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPREHENSIVE HUB FOOTER -->
+    <footer class="border-t border-zinc-900 bg-black/80 py-16 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-12">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-7 h-7 flex items-center justify-center bg-black border border-[#adfa1d] rounded-bl-lg rounded-tr-lg">
+                        <span class="text-[#adfa1d] font-heading font-bold text-xs">A</span>
+                    </div>
+                    <span class="font-heading font-bold text-lg text-white">ALWT DESIGNS</span>
+                </div>
+                <p class="text-zinc-500 text-xs max-w-xs leading-relaxed">
+                    Delivering premium identity engineering and fast code executions globally. Based out of the UK.
+                </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-12 text-sm">
+                <div>
+                    <span class="text-zinc-600 font-mono text-xs block mb-4 uppercase tracking-widest">// INQUIRIES</span>
+                    <a href="mailto:admin@alwtdesigns.xyz" class="text-white hover:text-[#adfa1d] transition-colors block mb-2 font-mono">admin@alwtdesigns.xyz</a>
+                    <span class="text-zinc-500 text-xs font-mono block">Response window: Within 12h</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-zinc-900 mt-12 pt-8 flex flex-col md:flex-row justify-between text-[11px] text-zinc-600 font-mono">
+            <p>© 2026 ALWT Designs. All infrastructure systems live.</p>
+            <p>Designed by Louie Warner. Powered by Pure Geometry.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
